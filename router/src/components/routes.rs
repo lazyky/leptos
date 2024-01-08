@@ -183,7 +183,7 @@ pub fn AnimatedRoutes(
     };
     let is_back = use_is_back_navigation();
     let (animation_state, set_animation_state) =
-        create_signal(AnimationState::Finally);
+        create_signal(AnimationState::Start);
     let next_route = router.pathname();
 
     let is_complete = Rc::new(Cell::new(true));
